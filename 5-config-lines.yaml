@@ -1,0 +1,19 @@
+
+---
+  - name: "PLAY 1 - DEMONSTRATE USING ios_config"
+    hosts: "iosxe"
+    connection: "network_cli"
+    gather_facts: no
+    tasks:
+        - name: "TASK 1 - CONFIGURE CDP AND LLDP"
+          cisco.ios.ios_config:
+            lines:
+                - cdp run
+                - lldp run
+
+        - name: "TASK 2 - CONFIGURE A LOOPBACK WITH A host_vars VARIABLE IP" 
+          cisco.ios.ios_config:
+            lines:
+                - "description configured by Ansible"
+                - "ip address {{ loopback_ip }}"
+            parents: "interface Loopback1337"
