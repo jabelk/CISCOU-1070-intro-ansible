@@ -1,4 +1,9 @@
 # Intro to Ansible for Network Engineers
+(30 minutes)
+
+
+When getting started with network automation, Ansible is a super useful tool to learn. It will provide a helpful platform and framework for connecting to network devices in a secure way to make configuration changes, read operational data and build reports. You can run Ansible locally on your laptop and connect to a ton of devices to save time in your next change window, even if it is just grabbing “show” commands to put into a file and view the differences between the state before and after your change. Ansible was originally designed for compute and cloud engineers, so this session is focused on how to learn it from a network engineer’s perspective, assuming no previous knowledge.  
+
 
 These demos are using the [NSO DevNet Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/43244b33-7af5-4e6b-9b48-58cadf3d2d24?diagramType=Topology), not because we are using NSO, but it has a nice topology (IOS, NXOS, ASA, XR) and we can reserve it for a week at a time.
 
